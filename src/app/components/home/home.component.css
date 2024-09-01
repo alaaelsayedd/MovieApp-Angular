@@ -1,0 +1,33 @@
+.hero-section {
+    background-image: url('https://cdn.dribbble.com/users/8399917/screenshots/18865222/media/5cd8873fa9a08c9e58044a3f1954d122.png?resize=400x300&vertical=center'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .hero-section h1 {
+    font-size: 4rem;
+  }
+  .hero-section p {
+    font-size: 1.5rem;
+  }
+  .featured-section {
+    padding: 30px 0;
+  }
+  .movie-card {
+    position: relative;
+    overflow: hidden;
+  }
+  .movie-card img {
+    transition: transform 0.3s;
+  }
+  .movie-card:hover img {
+    transform: scale(1.1);
+  }
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }

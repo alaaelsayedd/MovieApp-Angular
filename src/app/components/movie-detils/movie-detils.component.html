@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-6 mx-auto">
+    <div class="card">
+      <img
+        [src]="'https://image.tmdb.org/t/p/w500' + movieData.poster_path"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5
+          class="card-title"
+          [ngClass]="
+            movieData.vote_average > 7 ? 'text-primary' : 'text-danger'
+          "
+        >
+          {{ movieData.title }}
+        </h5>
+        <p class="card-text" [ngStyle]="{'font-family': 'fantasy'}">
+          {{ movieData.overview }}
+        </p>
+        <!-- <p class="card-text" [ngClass]="'cls'">
+          {{ movieData.overview }}
+        </p>  -->
+        @for (genre of movieData.genres; track $index) {
+        <span class="badge rounded-pill text-light mx-1" [ngClass]="genre.name">{{genre.name}}</span>
+        }
+      </div>
+    </div>
+  </div>
+</div>

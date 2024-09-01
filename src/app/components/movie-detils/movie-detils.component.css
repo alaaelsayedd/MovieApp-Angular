@@ -1,0 +1,47 @@
+.cls{
+    color: blueviolet;
+}
+.Action {
+    background-color: #ff5733; /* Example color for Action */
+    
+}
+
+.Comedy {
+    background-color: #f1c40f; /* Example color for Comedy */
+}
+
+.Drama {
+    background-color: #3498db; /* Example color for Drama */
+}
+
+.Horror {
+    background-color: #e74c3c; /* Example color for Horror */
+}
+
+.Romance {
+    background-color: #e91e63; /* Example color for Romance */
+}
+
+.SciFi {
+    background-color: #9b59b6; /* Example color for Sci-Fi */
+}
+
+.Thriller {
+    background-color: #2ecc71; /* Example color for Thriller */
+}
+
+.Documentary {
+    background-color: #1abc9c; /* Example color for Documentary */
+}
+
+.Family {
+    background-color: #f39c12; /* Example color for Family */
+}
+
+.Animation {
+    background-color: #8e44ad; /* Example color for Animation */
+}
+
+.Adventure {
+    background-color: #d35400; /* Example color for Adventure */
+}

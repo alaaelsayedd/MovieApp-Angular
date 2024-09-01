@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-10 mx-auto">
+      <div class="card  ">
+        <img
+          [src]="'https://image.tmdb.org/t/p/w500' + tvData.poster_path"
+          class="card-img-top w-50 "
+          alt="..."
+        />
+        <div class="card-body ">
+          <h5
+            class="card-title"
+            [ngClass]="
+              tvData.vote_average > 7 ? 'text-primary' : 'text-danger'
+            "
+          >
+            {{ tvData.name }}
+          </h5>
+          <p class="card-text" >
+            {{ tvData.overview }}
+          </p>
+         
+          @for (genre of tvData.genres; track $index) {
+          <span class="badge rounded-pill text-dark  " [ngClass]="genre.name">{{genre.name}}</span>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+  
